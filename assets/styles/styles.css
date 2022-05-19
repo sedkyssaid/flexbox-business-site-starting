@@ -1,8 +1,38 @@
 :root {
-/* CSS HEX */
---celadon: #a7d49bff;
---nickel: #706c61ff;
---dark-purple: #361d2eff;
---atomic-tangerine: #f39b6dff;
---bittersweet: #f96f5dff;
+  /* CSS HEX */
+  --celadon: #a7d49bff;
+  --nickel: #706c61ff;
+  --dark-purple: #361d2eff;
+  --atomic-tangerine: #f39b6dff;
+  --bittersweet: #f96f5dff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 16px;
+  background-color: var(--nickel);
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 3.75em;
+}
+h2 {
+  font-size: 3.125em;
+}
+h3 {
+  font-size: 2.25em;
+}
+h4 {
+  font-size: 2em;
+}
+h5 {
+  font-size: 1.75em;
+}
+h6 {
+  font-size: 1.25em;
 }
