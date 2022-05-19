@@ -6,6 +6,7 @@
   --atomic-tangerine: #f39b6dff;
   --bittersweet: #f96f5dff;
 }
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -36,3 +37,19 @@ h5 {
 h6 {
   font-size: 1.25em;
 }
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--celadon);
+}
+a:hover {
+    color: var(--bittersweet);
+}
+a:hover::after {
+    text-decoration: underline;
+}
+/* TODO: skew underline for page links; grows under text */
