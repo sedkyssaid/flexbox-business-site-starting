@@ -45,18 +45,26 @@ img {
 a {
   text-decoration: none;
   color: var(--celadon);
+  font-size: 1.125em;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 a:hover {
   color: var(--bittersweet);
 }
-a:hover::after {
-  text-decoration: underline;
+a::after {
+  border: 1em solid var(--bittersweet);
+  padding: 1px;
 }
 /* TODO: skew underline for page links; grows under text */
 
 /* Header */
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 .header__logo {
   max-width: 150px;
