@@ -1,3 +1,4 @@
+/* Global */
 :root {
   /* CSS HEX */
   --celadon: #a7d49bff;
@@ -6,7 +7,6 @@
   --atomic-tangerine: #f39b6dff;
   --bittersweet: #f96f5dff;
 }
-/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -37,11 +37,9 @@ h5 {
 h6 {
   font-size: 1.25em;
 }
-
 img {
   display: block;
 }
-
 a {
   text-decoration: none;
   color: var(--celadon);
@@ -86,7 +84,6 @@ a {
   transition: all 0.2s 0.2s ease-in-out;
   opacity: 1;
 }
-
 @media only screen and (max-width: 767.98px) {
   .header__link {
     margin-bottom: 0.3125em;
