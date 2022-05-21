@@ -50,15 +50,6 @@ a {
   line-height: normal;
   letter-spacing: normal;
 }
-a:hover {
-  color: var(--bittersweet);
-}
-a::after {
-  border: 1em solid var(--bittersweet);
-  padding: 1px;
-}
-/* TODO: skew underline for page links; grows under text */
-
 /* Header */
 
 .header {
@@ -75,14 +66,29 @@ a::after {
   height: auto;
   width: 100%;
 }
-
 .header__nav {
   display: flex;
   flex-wrap: wrap;
 }
-
 .header__link {
   justify-items: center;
   align-self: center;
   padding: 0 0.5em;
+}
+.header__link::after {
+  content: "";
+  border-bottom: 1px solid var(--bittersweet);
+  display: block;
+  opacity: 0;
+  padding: 0.15em;
+}
+.header__link:hover::after {
+  transition: all 0.2s 0.2s ease-in-out;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header__link {
+    margin-bottom: 0.3125em;
+  }
 }
