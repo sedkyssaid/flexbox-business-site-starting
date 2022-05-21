@@ -64,10 +64,25 @@ a::after {
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-content: center;
+  width: 100%;
+  border-bottom: 1px solid var(--bittersweet);
+  background-color: var(--dark-purple);
 }
 .header__logo {
   max-width: 150px;
   height: auto;
   width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__link {
+  justify-items: center;
+  align-self: center;
+  padding: 0 0.5em;
 }
