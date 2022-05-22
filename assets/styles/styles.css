@@ -7,7 +7,7 @@
   --atomic-tangerine: #f39b6dff;
   --bittersweet: #f96f5dff;
   --rgba-nickel: rgba(112, 108, 97, 1);
-  --rgba-half-nickel: rgba(112, 108, 97, .5);
+  --rgba-half-nickel: rgba(112, 108, 97, 0.5);
 }
 * {
   margin: 0;
@@ -50,6 +50,46 @@ a {
   font-weight: normal;
   line-height: normal;
   letter-spacing: normal;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3.25em;
+  }
+  h2 {
+    font-size: 2.75em;
+  }
+  h3 {
+    font-size: 2.125em;
+  }
+  h4 {
+    font-size: 1.75em;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
+  h6 {
+    font-size: 1.15em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.75em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.15em;
+  }
+  h6 {
+    font-size: 1.125em;
+  }
 }
 
 /* Header */
@@ -123,4 +163,10 @@ a {
   background-color: var(--rgba-half-nickel);
   max-width: 50em;
   height: max-content;
+  margin: auto;
+  padding: 2%;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 0;
 }
