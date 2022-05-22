@@ -6,6 +6,8 @@
   --dark-purple: #361d2eff;
   --atomic-tangerine: #f39b6dff;
   --bittersweet: #f96f5dff;
+  --rgba-nickel: rgba(112, 108, 97, 1);
+  --rgba-half-nickel: rgba(112, 108, 97, .5);
 }
 * {
   margin: 0;
@@ -15,6 +17,7 @@
 html,
 body {
   font-size: 16px;
+  letter-spacing: 1px;
   background-color: var(--nickel);
   color: #ffffff;
   font-family: "Raleway", sans-serif;
@@ -48,8 +51,8 @@ a {
   line-height: normal;
   letter-spacing: normal;
 }
-/* Header */
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -58,6 +61,9 @@ a {
   width: 100%;
   border-bottom: 1px solid var(--bittersweet);
   background-color: var(--dark-purple);
+  padding: 0 0.625em;
+  z-index: 1;
+  position: relative;
 }
 .header__logo {
   max-width: 150px;
@@ -88,4 +94,33 @@ a {
   .header__link {
     margin-bottom: 0.3125em;
   }
+}
+
+/* Mission */
+.mission {
+  background-image: url("/assets/images/coffee-beans-heart.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 4.75em;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.mission__content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-content: center;
+  background-color: var(--rgba-half-nickel);
+  max-width: 50em;
+  height: max-content;
 }
