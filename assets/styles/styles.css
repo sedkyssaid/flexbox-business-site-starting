@@ -174,3 +174,17 @@ a {
 }
 
 /* Products */
+.products {
+  position: relative;
+}
+
+.products__coffees {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.products__image {
+  width: 25em;
+}
