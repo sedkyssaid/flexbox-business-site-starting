@@ -52,6 +52,10 @@ a {
   line-height: normal;
   letter-spacing: normal;
 }
+section h2 {
+  text-align: center;
+  padding: 0.625em;
+}
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 3em;
@@ -179,11 +183,6 @@ a {
 /* Products */
 .products {
   position: relative;
-  text-align: center;
-}
-
-.products h2 {
-  padding: 0.625em;
 }
 .products__coffees {
   position: relative;
@@ -212,4 +211,30 @@ a {
   color: #000;
   text-align: left;
   padding: 0.625em;
+}
+
+/* Team */
+.team {
+  position: relative;
+}
+.team__team-members {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.team-member {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-flow: column wrap;
+  margin: 0 0 1.5625em 0;
+}
+.team-member__image {
+  max-width: 18.75em;
+  width: 100%;
+  height: auto;
 }
