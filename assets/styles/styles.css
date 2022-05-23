@@ -216,6 +216,13 @@ section h2 {
 /* Team */
 .team {
   position: relative;
+  background-image: url("/assets/images/coffee-beans-team-bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 .team__team-members {
   position: relative;
@@ -229,12 +236,50 @@ section h2 {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: space-evenly;
+  align-content: space-evenly;
   flex-flow: column wrap;
   margin: 0 0 1.5625em 0;
+  align-self: flex-start;
 }
 .team-member__image {
   max-width: 18.75em;
-  width: 100%;
   height: auto;
+}
+.team-member__content {
+  background-color: var(--bittersweet);
+  color: #000;
+  padding: 0.625em;
+}
+.team-member__content--italic {
+  font-style: italic;
+}
+.team-member__content--short {
+  max-width: 18.75em;
+}
+
+/* Footer */
+.footer {
+  padding: 2.5em 0.625em;
+  background-color: var(--dark-purple);
+}
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.column {
+  width: 50%;
+}
+.column--margin-bottom {
+  margin-bottom: 0.625em;
+}
+.footer--text-align {
+  text-align: center;
+}
+.footer--padding {
+  padding: 0.625em;
+}
+
+.footer--margin-top {
+  margin-top: 1.25em;
 }
