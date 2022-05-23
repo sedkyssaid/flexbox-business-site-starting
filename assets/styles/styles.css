@@ -8,6 +8,7 @@
   --bittersweet: #f96f5dff;
   --rgba-nickel: rgba(112, 108, 97, 1);
   --rgba-half-nickel: rgba(112, 108, 97, 0.5);
+  --rgba-quarter-nickel: rgba(112, 108, 97, 0.25);
 }
 * {
   margin: 0;
@@ -53,13 +54,13 @@ a {
 }
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 3.25em;
+    font-size: 3em;
   }
   h2 {
     font-size: 2.75em;
   }
   h3 {
-    font-size: 2.125em;
+    font-size: 2.25em;
   }
   h4 {
     font-size: 1.75em;
@@ -73,16 +74,16 @@ a {
 }
 @media only screen and (max-width: 640px) {
   h1 {
-    font-size: 2.75em;
-  }
-  h2 {
     font-size: 2em;
   }
-  h3 {
+  h2 {
     font-size: 1.75em;
   }
-  h4 {
+  h3 {
     font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.275em;
   }
   h5 {
     font-size: 1.15em;
@@ -138,39 +139,30 @@ a {
 
 /* Mission */
 .mission {
-  background-image: url("/assets/images/coffee-beans-heart.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  position: absolute;
+}
+.mission__background {
+  position: relative;
   width: 100%;
   height: auto;
-  top: 4.75em;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  margin: 0 auto;
 }
 .mission__content {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-end;
-  align-content: center;
-  background-color: var(--rgba-half-nickel);
-  max-width: 50em;
-  height: max-content;
-  margin: auto;
-  padding: 2%;
+  background-color: var(--rgba-quarter-nickel);
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  padding: 2%;
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
+  margin: 0 auto;
 }
 .mission__content h1 {
   margin: 0 0 0.5em 0;
+}
+.mission__content h2 {
+  font-weight: 500;
 }
 
 /* Products */
@@ -180,11 +172,14 @@ a {
 
 .products__coffees {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
 }
 
 .products__image {
-  width: 25em;
+  min-width: 20em;
+  max-width: 25em;
+  width: 100%;
+  height: auto;
 }
