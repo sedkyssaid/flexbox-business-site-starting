@@ -198,6 +198,7 @@ a {
   justify-content: flex-start;
   align-content: space-between;
   flex-flow: column;
+  margin: 0 0 1.5625em 0;
 }
 .product__image {
   max-width: 18.75em;
@@ -210,5 +211,5 @@ a {
   width: 100%;
   color: #000;
   text-align: left;
-  padding: auto 10px;
+  padding: 0.625em;
 }
